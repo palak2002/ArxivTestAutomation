@@ -1,0 +1,749 @@
+{
+  "id": "3ceb37f2-f732-43e8-a41e-b38915ac625f",
+  "version": "2.0",
+  "name": "ArxivTestAutomation",
+  "url": "https://arxiv.org",
+  "tests": [{
+    "id": "e4ecdfaf-b8d1-4f5b-9d65-773e7ef20378",
+    "name": "Newsubmission",
+    "commands": [{
+      "id": "a9bebb7c-a31c-4d28-a7a1-f4d0926edc76",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bceb844f-340f-4193-9b88-ff34af6dc263",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "802x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95a384cc-4e8f-4fb9-b264-6b653d82ebb9",
+      "comment": "",
+      "command": "click",
+      "target": "id=new-math",
+      "targets": [
+        ["id=new-math", "id"],
+        ["css=#new-math", "css:finder"],
+        ["xpath=(//a[contains(text(),'new')])[15]", "xpath:link"],
+        ["xpath=//a[@id='new-math']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/ul[2]/li/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/list/math/new')]", "xpath:href"],
+        ["xpath=//ul[2]/li/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87a0c1d3-dbe8-42a5-9318-06b88ec6f78d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New submissions",
+      "targets": [
+        ["linkText=New submissions", "linkText"],
+        ["css=ul:nth-child(4) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'New submissions')]", "xpath:link"],
+        ["xpath=//div[@id='dlpage']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/list/math/new?skip=0&show=2000')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'New submissions')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "016e23b1-78d1-40c8-8f42-5f4ff4ee0445",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,150.39999389648438)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1fb996cb-400e-4b46-bc90-d46ad44f3db5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,238.39999389648438)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98fa0afc-6c97-4bdb-b8b5-9427e56de316",
+      "comment": "",
+      "command": "click",
+      "target": "css=dl:nth-child(10) > dt:nth-child(3) a:nth-child(4)",
+      "targets": [
+        ["css=dl:nth-child(10) > dt:nth-child(3) a:nth-child(4)", "css:finder"],
+        ["xpath=(//a[contains(text(),'other')])[2]", "xpath:link"],
+        ["xpath=//div[@id='dlpage']/dl/dt[2]/span/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/format/2402.18585')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "536c4d61-d42a-459d-877d-9067975fa6bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=form > input:nth-child(2)",
+      "targets": [
+        ["css=form > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Download PDF']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/dl/dd/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a578238b-e5d0-43fe-ba00-4ea34333af42",
+    "name": "datelatest",
+    "commands": [{
+      "id": "c69ed1d4-8c11-4313-8428-6bcfbb487b86",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73830ea5-3d5d-4710-869b-6186206bc001",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "806x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be752c3e-a59e-4b95-b4a4-cc0ed76129a6",
+      "comment": "",
+      "command": "click",
+      "target": "id=recent-q-bio",
+      "targets": [
+        ["id=recent-q-bio", "id"],
+        ["css=#recent-q-bio", "css:finder"],
+        ["xpath=(//a[contains(text(),'recent')])[16]", "xpath:link"],
+        ["xpath=//a[@id='recent-q-bio']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/ul[4]/li/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/list/q-bio/recent')]", "xpath:href"],
+        ["xpath=//ul[4]/li/a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bf46975-a9ce-4e44-a07e-4ca90fb620e7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Fri, 1 Mar 2024",
+      "targets": [
+        ["linkText=Fri, 1 Mar 2024", "linkText"],
+        ["css=ul:nth-child(3) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Fri, 1 Mar 2024')]", "xpath:link"],
+        ["xpath=//div[@id='dlpage']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/list/q-bio/pastweek?skip=0&show=25')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Fri, 1 Mar 2024')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0eeab3e-4eca-4f8b-a358-9395731fb60f",
+      "comment": "",
+      "command": "click",
+      "target": "css=dt:nth-child(9) a:nth-child(4)",
+      "targets": [
+        ["css=dt:nth-child(9) a:nth-child(4)", "css:finder"],
+        ["xpath=(//a[contains(text(),'other')])[5]", "xpath:link"],
+        ["xpath=//div[@id='dlpage']/dl/dt[5]/span/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/format/2402.19095')]", "xpath:href"],
+        ["xpath=//dt[5]/span/a[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36e15f46-4f31-4c7e-8504-b77426c45b3b",
+      "comment": "",
+      "command": "click",
+      "target": "css=form > input",
+      "targets": [
+        ["css=form > input", "css:finder"],
+        ["xpath=//input[@value='Download PDF']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/dl/dd/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "dc633e3e-6a98-44d7-85b3-a8126ec7efa7",
+    "name": "AdvancedSearchtest",
+    "commands": [{
+      "id": "99931128-8b3f-45d6-8c94-d1535978d17f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca390e1f-e97e-48e7-8922-b38f97c526b1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "805x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b8de50c-d789-4e09-bc0a-78258092d2c6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Advanced Search",
+      "targets": [
+        ["linkText=Advanced Search", "linkText"],
+        ["css=.help > a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Advanced Search')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div[2]/form/div/div/p/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://arxiv.org/search/advanced')]", "xpath:href"],
+        ["xpath=//p/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Advanced Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "acd782f5-9308-420c-847a-5144b6ab2f70",
+      "comment": "",
+      "command": "click",
+      "target": "id=terms-0-term",
+      "targets": [
+        ["id=terms-0-term", "id"],
+        ["name=terms-0-term", "name"],
+        ["css=#terms-0-term", "css:finder"],
+        ["xpath=//input[@id='terms-0-term']", "xpath:attributes"],
+        ["xpath=//section[@id='terms-fieldset']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "549d1e4a-9356-4f26-bf10-3dbec4b31f62",
+      "comment": "",
+      "command": "click",
+      "target": "css=.column:nth-child(1) > .field:nth-child(1) label",
+      "targets": [
+        ["css=.column:nth-child(1) > .field:nth-child(1) label", "css:finder"],
+        ["xpath=//main[@id='main-container']/div[2]/div[2]/div/div/form/section[2]/fieldset/div[2]/div/div/div/div/label", "xpath:idRelative"],
+        ["xpath=//div/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Computer Science (cs)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "45ebbad1-655e-4696-964f-97338b579a4f",
+      "comment": "",
+      "command": "click",
+      "target": "id=classification-include_cross_list-0",
+      "targets": [
+        ["id=classification-include_cross_list-0", "id"],
+        ["name=classification-include_cross_list", "name"],
+        ["css=#classification-include_cross_list-0", "css:finder"],
+        ["xpath=//input[@id='classification-include_cross_list-0']", "xpath:attributes"],
+        ["xpath=//main[@id='main-container']/div[2]/div[2]/div/div/form/section[2]/fieldset/div[3]/div/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e79cd7a-5730-4070-821a-d7e61e35b04c",
+      "comment": "",
+      "command": "click",
+      "target": "id=date-filter_by-3",
+      "targets": [
+        ["id=date-filter_by-3", "id"],
+        ["css=#date-filter_by-3", "css:finder"],
+        ["xpath=//input[@id='date-filter_by-3']", "xpath:attributes"],
+        ["xpath=//main[@id='main-container']/div[2]/div[2]/div/div/form/section[2]/fieldset[2]/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//fieldset[2]/div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5769ffbe-bedb-42c8-a71f-97e8cf2f3fdd",
+      "comment": "",
+      "command": "click",
+      "target": "id=date-from_date",
+      "targets": [
+        ["id=date-from_date", "id"],
+        ["name=date-from_date", "name"],
+        ["css=#date-from_date", "css:finder"],
+        ["xpath=//input[@id='date-from_date']", "xpath:attributes"],
+        ["xpath=//main[@id='main-container']/div[2]/div[2]/div/div/form/section[2]/fieldset[2]/div[5]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed0715df-0f06-49e8-af60-d53ed263b577",
+      "comment": "",
+      "command": "click",
+      "target": "id=date-from_date",
+      "targets": [
+        ["id=date-from_date", "id"],
+        ["name=date-from_date", "name"],
+        ["css=#date-from_date", "css:finder"],
+        ["xpath=//input[@id='date-from_date']", "xpath:attributes"],
+        ["xpath=//main[@id='main-container']/div[2]/div[2]/div/div/form/section[2]/fieldset[2]/div[5]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf1bdf1e-a2f6-4ed8-9154-2a35de8df08f",
+      "comment": "",
+      "command": "type",
+      "target": "id=date-from_date",
+      "targets": [
+        ["id=date-from_date", "id"],
+        ["name=date-from_date", "name"],
+        ["css=#date-from_date", "css:finder"],
+        ["xpath=//input[@id='date-from_date']", "xpath:attributes"],
+        ["xpath=//main[@id='main-container']/div[2]/div[2]/div/div/form/section[2]/fieldset[2]/div[5]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "2024-01-01"
+    }, {
+      "id": "cb8d1978-c160-4448-b330-19906394e8b4",
+      "comment": "",
+      "command": "click",
+      "target": "id=date-to_date",
+      "targets": [
+        ["id=date-to_date", "id"],
+        ["name=date-to_date", "name"],
+        ["css=#date-to_date", "css:finder"],
+        ["xpath=//input[@id='date-to_date']", "xpath:attributes"],
+        ["xpath=//main[@id='main-container']/div[2]/div[2]/div/div/form/section[2]/fieldset[2]/div[5]/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e96aeeb-f232-471a-8ccd-490772bf6e3b",
+      "comment": "",
+      "command": "type",
+      "target": "id=date-to_date",
+      "targets": [
+        ["id=date-to_date", "id"],
+        ["name=date-to_date", "name"],
+        ["css=#date-to_date", "css:finder"],
+        ["xpath=//input[@id='date-to_date']", "xpath:attributes"],
+        ["xpath=//main[@id='main-container']/div[2]/div[2]/div/div/form/section[2]/fieldset[2]/div[5]/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "2024-03-03"
+    }, {
+      "id": "12692bc6-fd2f-4920-978f-f199929ffe52",
+      "comment": "",
+      "command": "click",
+      "target": "id=date-date_type-2",
+      "targets": [
+        ["id=date-date_type-2", "id"],
+        ["css=#date-date_type-2", "css:finder"],
+        ["xpath=//input[@id='date-date_type-2']", "xpath:attributes"],
+        ["xpath=//main[@id='main-container']/div[2]/div[2]/div/div/form/section[2]/fieldset[2]/div[7]/div/label[3]/input", "xpath:idRelative"],
+        ["xpath=//label[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2453e7da-656a-435e-ae4f-4c076fe1fd8a",
+      "comment": "",
+      "command": "click",
+      "target": "id=date-date_type-0",
+      "targets": [
+        ["id=date-date_type-0", "id"],
+        ["name=date-date_type", "name"],
+        ["css=#date-date_type-0", "css:finder"],
+        ["xpath=//input[@id='date-date_type-0']", "xpath:attributes"],
+        ["xpath=//main[@id='main-container']/div[2]/div[2]/div/div/form/section[2]/fieldset[2]/div[7]/div/label/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b49e0400-2ddc-4355-bac9-dbb1f70f02d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button:nth-child(3)",
+      "targets": [
+        ["css=.button:nth-child(3)", "css:finder"],
+        ["xpath=//main[@id='main-container']/div[2]/div[2]/div/div/form/section[3]/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29bc9d8b-b2b5-43a3-b5fb-ae9571fec1f4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=other",
+      "targets": [
+        ["linkText=other", "linkText"],
+        ["css=.arxiv-result:nth-child(1) > .is-marginless a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'other')]", "xpath:link"],
+        ["xpath=//main[@id='main-container']/div[2]/ol/li/div/p/span/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://arxiv.org/format/2402.19481')]", "xpath:href"],
+        ["xpath=//span/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'other')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "60e8d6a0-d12b-4fa7-b52f-9264158f6cf7",
+      "comment": "",
+      "command": "click",
+      "target": "css=form > input:nth-child(2)",
+      "targets": [
+        ["css=form > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Download PDF']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/dl/dd/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "01334a8b-0a9a-485a-b8ce-7b959c9099b8",
+    "name": "submissionDate",
+    "commands": [{
+      "id": "d0f0ffb4-fcc8-4d69-b38e-7de58e6566f3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1f2fc31-90f7-4d5c-8fc0-aef687dc1fa1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "808x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8497938c-74b6-437e-8329-539ecc29e120",
+      "comment": "",
+      "command": "click",
+      "target": "name=searchtype",
+      "targets": [
+        ["name=searchtype", "name"],
+        ["css=select:nth-child(1)", "css:finder"],
+        ["xpath=//select[@name='searchtype']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[2]/form/div/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c1b612e-4678-48cb-aec2-7ca2f8409054",
+      "comment": "",
+      "command": "select",
+      "target": "name=searchtype",
+      "targets": [],
+      "value": "label=Journal reference"
+    }, {
+      "id": "94e28bd4-8bcb-4ac2-bd1c-a8c8cd7dfbb9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-cul-darker",
+      "targets": [
+        ["css=.is-cul-darker", "css:finder"],
+        ["xpath=//div[@id='header']/div[2]/form/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cb6fe28-48a3-4d6f-b218-66f27639a554",
+      "comment": "",
+      "command": "click",
+      "target": "id=query",
+      "targets": [
+        ["id=query", "id"],
+        ["css=#query", "css:finder"],
+        ["xpath=//input[@id='query']", "xpath:attributes"],
+        ["xpath=//main[@id='main-container']/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//main/div[2]/form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "caf35ae1-5547-4523-a14a-8b6a333ee5fd",
+      "comment": "",
+      "command": "type",
+      "target": "id=query",
+      "targets": [
+        ["id=query", "id"],
+        ["css=#query", "css:finder"],
+        ["xpath=//input[@id='query']", "xpath:attributes"],
+        ["xpath=//main[@id='main-container']/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//main/div[2]/form/div/div/input", "xpath:position"]
+      ],
+      "value": "journal"
+    }, {
+      "id": "d2ebade1-7aec-4b2a-917e-485616a50fac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button:nth-child(1)",
+      "targets": [
+        ["css=.button:nth-child(1)", "css:finder"],
+        ["xpath=//main[@id='main-container']/div[2]/form/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea9d1591-3bc0-4d1e-a8d8-6c7bb357e023",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,16.799999237060547)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76947d18-59f2-4549-ade8-3fcb9c421270",
+      "comment": "",
+      "command": "click",
+      "target": "id=order",
+      "targets": [
+        ["id=order", "id"],
+        ["css=#order", "css:finder"],
+        ["xpath=//select[@id='order']", "xpath:attributes"],
+        ["xpath=//main[@id='main-container']/div[2]/div/div/form/div[2]/div[2]/span/select", "xpath:idRelative"],
+        ["xpath=//div[2]/span/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7b70304-7137-43c3-85a8-880e9d07fb8d",
+      "comment": "",
+      "command": "select",
+      "target": "id=order",
+      "targets": [],
+      "value": "label=Submission date (newest first)"
+    }, {
+      "id": "f2055e5a-0b20-4d9f-8750-fc645d0689aa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=other",
+      "targets": [
+        ["linkText=other", "linkText"],
+        ["css=.arxiv-result:nth-child(1) > .is-marginless a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'other')]", "xpath:link"],
+        ["xpath=//main[@id='main-container']/div[2]/ol/li/div/p/span/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://arxiv.org/format/2402.19265')]", "xpath:href"],
+        ["xpath=//span/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'other')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f829a60-66e5-473e-bc49-668aac0b866b",
+      "comment": "",
+      "command": "click",
+      "target": "css=form > input:nth-child(2)",
+      "targets": [
+        ["css=form > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Download PDF']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/dl/dd/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "96e5be40-a4e2-4df0-b985-886074171c42",
+    "name": "recentpdf",
+    "commands": [{
+      "id": "5a1f4775-d3e2-45ac-9861-85b6b1214be8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a8dc1c0-e94e-4599-85bd-bdba596570c0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "808x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "708110cb-461d-4c99-bdca-d44343569173",
+      "comment": "",
+      "command": "click",
+      "target": "id=recent-nucl-th",
+      "targets": [
+        ["id=recent-nucl-th", "id"],
+        ["css=#recent-nucl-th", "css:finder"],
+        ["xpath=(//a[contains(text(),'recent')])[11]", "xpath:link"],
+        ["xpath=//a[@id='recent-nucl-th']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/ul/li[11]/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/list/nucl-th/recent')]", "xpath:href"],
+        ["xpath=//li[11]/a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3da5f4e2-f974-4585-ac3c-e0abfbfd4050",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Fri, 1 Mar 2024",
+      "targets": [
+        ["linkText=Fri, 1 Mar 2024", "linkText"],
+        ["css=ul:nth-child(3) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Fri, 1 Mar 2024')]", "xpath:link"],
+        ["xpath=//div[@id='dlpage']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/list/nucl-th/pastweek?skip=0&show=25')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Fri, 1 Mar 2024')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "74a3c194-43bb-45db-a909-934fc6dfb522",
+      "comment": "",
+      "command": "click",
+      "target": "css=dt:nth-child(5) a:nth-child(4)",
+      "targets": [
+        ["css=dt:nth-child(5) a:nth-child(4)", "css:finder"],
+        ["xpath=(//a[contains(text(),'other')])[3]", "xpath:link"],
+        ["xpath=//div[@id='dlpage']/dl/dt[3]/span/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/format/2402.19008')]", "xpath:href"],
+        ["xpath=//span/a[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "597c4773-cf56-4200-9d4e-9ab7067b1054",
+      "comment": "",
+      "command": "click",
+      "target": "css=form > input:nth-child(2)",
+      "targets": [
+        ["css=form > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Download PDF']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/dl/dd/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d23d0826-3e69-42ba-bc97-07ef56c9b210",
+    "name": "newannouncementdate",
+    "commands": [{
+      "id": "9d163ab7-1668-4be1-91ad-880fa4f71df3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6adecfc-bef5-4d1b-b934-73cc2cfe2682",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "808x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d371012-2c68-413a-ab68-84f058217088",
+      "comment": "",
+      "command": "click",
+      "target": "name=query",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.control > .input", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "969a1c4f-a853-4ea8-be15-c380e6281ae3",
+      "comment": "",
+      "command": "type",
+      "target": "name=query",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.control > .input", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "quantum"
+    }, {
+      "id": "3d3c978a-dcc5-4d67-af52-e038ea527276",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=query",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.control > .input", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "8594fc0b-b35f-44a9-8eb4-285630a0ef0a",
+      "comment": "",
+      "command": "click",
+      "target": "id=order",
+      "targets": [
+        ["id=order", "id"],
+        ["css=#order", "css:finder"],
+        ["xpath=//select[@id='order']", "xpath:attributes"],
+        ["xpath=//main[@id='main-container']/div[2]/div/div/form/div[2]/div[2]/span/select", "xpath:idRelative"],
+        ["xpath=//div[2]/span/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "086c48cf-373b-474b-a7f9-d2354b24e173",
+      "comment": "",
+      "command": "select",
+      "target": "id=order",
+      "targets": [],
+      "value": "label=Announcement date (oldest first)"
+    }, {
+      "id": "debe53d5-5342-4cc5-9af8-62f5b7ce40c8",
+      "comment": "",
+      "command": "click",
+      "target": "id=order",
+      "targets": [
+        ["id=order", "id"],
+        ["css=#order", "css:finder"],
+        ["xpath=//select[@id='order']", "xpath:attributes"],
+        ["xpath=//main[@id='main-container']/div[2]/div/div/form/div[2]/div[2]/span/select", "xpath:idRelative"],
+        ["xpath=//div[2]/span/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91a0114f-25d9-401b-9ab1-e0e0ca5f89fb",
+      "comment": "",
+      "command": "select",
+      "target": "id=order",
+      "targets": [],
+      "value": "label=Announcement date (newest first)"
+    }, {
+      "id": "fc736c5a-3745-4e24-9273-a4dc4f18895c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.control:nth-child(3) > .is-small",
+      "targets": [
+        ["css=.control:nth-child(3) > .is-small", "css:finder"],
+        ["xpath=//main[@id='main-container']/div[2]/div/div/form/div[2]/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Go')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbec63b0-0724-4ba3-b201-3b826e8078bf",
+      "comment": "",
+      "command": "click",
+      "target": "id=query",
+      "targets": [
+        ["id=query", "id"],
+        ["css=.control > #query", "css:finder"],
+        ["xpath=//input[@id='query']", "xpath:attributes"],
+        ["xpath=//main[@id='main-container']/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//main/div[2]/form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3003469a-73ca-4163-87bd-08cd4f7697ec",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=pdf",
+      "targets": [
+        ["linkText=pdf", "linkText"],
+        ["css=.arxiv-result:nth-child(1) span > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'pdf')]", "xpath:link"],
+        ["xpath=//main[@id='main-container']/div[2]/ol/li/div/p/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://arxiv.org/pdf/2403.02081')]", "xpath:href"],
+        ["xpath=//p/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'pdf')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c6a83319-6923-4769-b0b2-a5680884656f",
+    "name": "microsoftassignment",
+    "persistSession": false,
+    "parallel": true,
+    "timeout": 1400000,
+    "tests": ["dc633e3e-6a98-44d7-85b3-a8126ec7efa7", "e4ecdfaf-b8d1-4f5b-9d65-773e7ef20378", "a578238b-e5d0-43fe-ba00-4ea34333af42", "d23d0826-3e69-42ba-bc97-07ef56c9b210", "01334a8b-0a9a-485a-b8ce-7b959c9099b8", "96e5be40-a4e2-4df0-b985-886074171c42"]
+  }],
+  "urls": ["https://arxiv.org/"],
+  "plugins": []
+}
